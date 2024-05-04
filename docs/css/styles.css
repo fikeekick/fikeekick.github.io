@@ -1,0 +1,16 @@
+.typing-text {
+    font-size: 120pt;
+    /* 폰트 크기 설정 */
+    font-family: Arial, sans-serif;
+    /* 폰트 설정 */
+    overflow: hidden;
+    /* 한 글자씩 나타나도록 설정 */
+    white-space: nowrap;
+    /* 줄바꿈 방지 */
+    background: linear-gradient(90deg, #00DE4D, #CEf566);
+    /* 그라디언트 배경 설정 */
+    -webkit-background-clip: text;
+    /* 텍스트에 그라디언트 적용 */
+    -webkit-text-fill-color: transparent;
+    /* 텍스트 색상을 투명으로 설정하여 배경색이 텍스트 색상으로 나타나도록 함 */
+}
