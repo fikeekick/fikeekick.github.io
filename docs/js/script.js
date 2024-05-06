@@ -1,4 +1,4 @@
-const phrases = ["kickkick", "fikee"]; // 텍스트 배열
+const phrases = [" kickkick"," fikee"]; // 텍스트 배열
 const delay = 150; // 글자가 나타나는 간격 (밀리초)
 const typingTextElement = document.getElementById("typingText");
 
