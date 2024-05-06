@@ -8,19 +8,36 @@ body {
 
 header {
     background-color: #ffffff;
-    color: #28a745;
     text-align: center;
-    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+header h1,
+header p {
+    margin: 0;
+    /* 기본 마진 제거 */
 }
 
 header h1 {
     font-family: 'Bagel Fat One', cursive;
-    font-size: 6em;
-    margin-bottom: 10pt;
+    font-size: 5em;
+    margin-bottom: 5pt;
+    /* h1 아래쪽 간격을 최소로 설정 */
+    margin-right: 5pt;
+    /* 오른쪽 간격 5pt */
+    margin-left: 5pt;
+    /* 왼쪽 간격 5pt */
+    padding: 20px 20px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #93ED00, #CFF505);
 }
 
 header p {
-    color: #8cc168;
+    color: #7ED900;
+    font-size: 1.5em;
+    margin-top: -30pt;
 }
 
 .container {
@@ -60,4 +77,16 @@ footer {
     text-align: center;
     margin-top: 40px;
     color: #666;
+}
+
+ul {
+    list-style: none;
+    /* 목록 스타일 초기화 */
+}
+
+ul li::before {
+    content: '💭';
+    /* 구름 이모지 추가 */
+    margin-right: 5px;
+    /* 이모지와 텍스트 사이 간격 조정 */
 }
